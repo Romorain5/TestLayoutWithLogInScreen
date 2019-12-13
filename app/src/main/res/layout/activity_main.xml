@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/mobile_wallpaper2_by_maria_shanina">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="Postly"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:fontFamily="@font/biorhyme_extrabold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Seamless Social Sharing, it's that easy !"
+        android:textColor="@color/white"
+
+        android:textSize="20dp"
+        app:fontFamily="@font/nunito_semibold" />
+    <LinearLayout
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@android:color/transparent" >
+
+            <eightbitlab.com.blurview.BlurView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/blur_email"
+                android:background="#63303030">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="15dp"
+                    android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                    android:drawableTint="#8B8B8B"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:hint="you@yours.com"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textColorHint="#8B8B8B"/>
+
+
+
+
+            </eightbitlab.com.blurview.BlurView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@android:color/transparent" >
+
+            <eightbitlab.com.blurview.BlurView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/blur_password"
+                android:background="#63303030">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="15dp"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                    android:drawableTint="#8B8B8B"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:textColorHint="#8B8B8B"/>
+
+
+
+
+            </eightbitlab.com.blurview.BlurView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_signin_background"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:foreground="?android:selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--- OR ---"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_signin_background"
+            android:text="Create an account"
+            android:textColor="@color/white"
+            android:foreground="?android:selectableItemBackground"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
