@@ -34,7 +34,6 @@
         android:text="Seamless Social Sharing, it's that easy !"
         android:textColor="@color/white"
         android:textSize="20dp"
-
         app:fontFamily="@font/nunito_semibold"
         android:layout_below="@+id/Tittle" />
 
