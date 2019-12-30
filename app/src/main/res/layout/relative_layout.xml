@@ -128,6 +128,15 @@
         android:textColor="@color/white"
         tools:layout_editor_absoluteX="20dp" />
 
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="30dp"
+        />
+
     <TextView
 
         android:id="@+id/textView"
@@ -135,10 +144,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:text="--- OR ---"
+        android:text=" OR "
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
        android:layout_below="@+id/button" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="30dp"
+        />
 
     <Button
         android:layout_below="@+id/textView"
